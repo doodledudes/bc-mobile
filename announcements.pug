@@ -1,0 +1,52 @@
+extends ./layout/_layout-page.pug
+
+block content
+
+  main.mdl-layout__content
+    .page-content
+      .navigation
+        .breadcrumb Announcements
+      //- navigation
+      
+      section
+        .search-bar.card.mdl-layout__header-row
+          form(action='#')
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--expandable
+              label.mdl-button.mdl-js-button.mdl-button--icon(for='sample6')
+                i.material-icons search
+              //- label
+              .mdl-textfield__expandable-holder
+                input#sample6.mdl-textfield__input(type='text')
+                label.mdl-textfield__label(for='sample-expandable') Expandable Input
+              //- mdl-textfield__expandable-holder
+            //- mdl-textfield
+          //- form
+          .mdl-layout-spacer
+          button.mdl-button.mdl-js-button.mdl-button--icon
+            i.material-icons mic
+          //- button
+        //- mdl-card
+      //- section
+      .announcements
+        .item
+          h6 Three-line item
+          p Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
+        //- item
+        .item
+          h6 Three-line item
+          p Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
+        //- item
+        .item
+          h6 Three-line item
+          p Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
+        //- item
+      //- announcements
+    //- page-content
+    
+  //- main
+
+block scripts
+  script.
+    $(document).ready(function() {
+      
+    });

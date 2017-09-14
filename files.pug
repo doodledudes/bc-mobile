@@ -1,0 +1,69 @@
+extends ./layout/_layout-page.pug
+
+block content
+
+  main.mdl-layout__content
+    .page-content
+      .navigation
+        .breadcrumb Files
+      //- navigation
+      
+      section
+        .search-bar.card.mdl-layout__header-row
+          form(action='#')
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--expandable
+              label.mdl-button.mdl-js-button.mdl-button--icon(for='sample6')
+                i.material-icons search
+              //- label
+              .mdl-textfield__expandable-holder
+                input#sample6.mdl-textfield__input(type='text')
+                label.mdl-textfield__label(for='sample-expandable') Expandable Input
+              //- mdl-textfield__expandable-holder
+            //- mdl-textfield
+          //- form
+          .mdl-layout-spacer
+          button.mdl-button.mdl-js-button.mdl-button--icon
+            i.material-icons mic
+          //- button
+        //- mdl-card
+      //- section
+      .files
+        .uploads
+          .album-frame
+            i.material-icons filter
+          //- album-frame
+          .footer
+            button.download.mdl-button.mdl-js-button.mdl-button--icon
+              i.material-icons file_download
+            //- button
+            .title Type of Eagles
+            .author By Tom hardy
+            .details 5 Files | Friday at 05:24 PM
+          //- footer
+        //- uploads
+        .uploads
+          .album-frame
+            i.material-icons filter
+          //- album-frame
+          .footer
+            button.download.mdl-button.mdl-js-button.mdl-button--icon
+              i.material-icons file_download
+            //- button
+            .title Type of Eagles
+            .author By Tom hardy
+            .details 5 Files | Friday at 05:24 PM
+          //- footer
+        //- uploads
+      //- files
+    //- page-content
+    
+    button.floating-add.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
+      i.material-icons add
+    //- button
+  //- main
+
+block scripts
+  script.
+    $(document).ready(function() {
+      
+    });

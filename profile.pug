@@ -1,0 +1,55 @@
+extends ./layout/_layout-page.pug
+
+block content
+
+  main.mdl-layout__content
+    .page-content
+      .navigation
+        a.mdl-button.mdl-js-button.mdl-button--icon(href='confirm.html')
+          i.material-icons arrow_back
+        //- button
+        .breadcrumb My Profile
+        button.save.mdl-button.mdl-js-button.mdl-js-ripple-effect.mdl-button--primary
+          | Save
+        //- button
+      //- navigation
+      .payment-details
+        .mdl-card
+          .mdl-card__supporting-text
+            form(action='#')
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input#sample3.mdl-textfield__input(type='text', value='268743A')
+                label.mdl-textfield__label(for='sample3') Customer ID
+              //- mdl-textfield
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input#sample3.mdl-textfield__input(type='text', value='Jin')
+                label.mdl-textfield__label(for='sample3') First Name
+              //- mdl-textfield
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input#sample3.mdl-textfield__input(type='text', value='Kazama')
+                label.mdl-textfield__label(for='sample3') Last Name
+              //- mdl-textfield
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input#sample3.mdl-textfield__input(type='text', value='912 2311 123')
+                label.mdl-textfield__label(for='sample3') Phone Number
+              //- mdl-textfield
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input#sample3.mdl-textfield__input(type='text', value='jin.kazama1231@yopmail.com')
+                label.mdl-textfield__label(for='sample3') Email Address
+              //- mdl-textfield
+            //- form
+          //- mdl-card__supporting-text
+        //- mdl-card
+      //- payment-details
+      section
+        button.mdl-button.mdl-js-button.mdl-button--colored.mdl-js-ripple-effect.mdl-button--primary Proceed To Pay
+      //- section
+    //- page-content
+    
+  //- main
+
+block scripts
+  script.
+    $(document).ready(function() {
+      
+    });

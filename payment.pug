@@ -1,0 +1,40 @@
+extends ./layout/_layout-page.pug
+
+block content
+
+  main.mdl-layout__content
+    .page-content
+      .navigation
+        a.mdl-button.mdl-js-button.mdl-button--icon(href='confirm.html')
+          i.material-icons arrow_back
+        //- button
+        .breadcrumb Payment
+      //- navigation
+      .schedule.mdl-card.confirm
+        .heading
+          h6 Payment Information
+          .sched
+            p Course Payment
+            p Amount $ 900.00
+          //- sched
+        //- .heading
+        .mdl-card__supporting-text
+          label.terms.mdl-checkbox.mdl-js-checkbox.mdl-js-ripple-effect(for='checkbox-2')
+            input#checkbox-2.mdl-checkbox__input(type='checkbox')
+            span.mdl-checkbox__label I have read and accepted the&nbsp;
+              a(href='') Terms and Conditions
+          //- label
+        //- .mdl-card__supporting-text
+      //- mdl-card
+      section
+        button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored.mdl-js-ripple-effect.mdl-button--accent Proceed To Pay
+      //- section
+    //- page-content
+    
+  //- main
+
+block scripts
+  script.
+    $(document).ready(function() {
+      
+    });

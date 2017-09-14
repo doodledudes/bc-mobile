@@ -1,0 +1,43 @@
+header.mdl-layout__header
+  .mdl-layout__header-row
+    .mdl-layout-spacer
+    button.mdl-button.mdl-js-button.mdl-button--icon
+      i.material-icons notifications_none
+    //- button
+    .mdl-textfield.mdl-js-textfield.mdl-textfield--expandable.mdl-textfield--floating-label.mdl-textfield--align-right
+      label.mdl-button.mdl-js-button.mdl-button--icon(for='fixed-header-drawer-exp')
+        i.material-icons search
+      //- label
+      .mdl-textfield__expandable-holder
+        input#fixed-header-drawer-exp.mdl-textfield__input(type='text', name='sample')
+      //- mdl-textfield__expandable-holder
+    //- mdl-textfield
+  //- mdl-layout__header-row
+//- header
+.mdl-layout__drawer
+  .user-info
+    img(src='http://via.placeholder.com/70')
+    .email username.sample@gmail.com
+    .userlabel
+      a(href='profile.html') My Profile
+    //- userlabel
+  //- user-info
+  nav.mdl-navigation
+    a.mdl-navigation__link(href='enrollment.html')
+      span.mdl-badge(data-badge='4') My Current Enrollment
+    //- a
+    a.mdl-navigation__link(href='progression.html') My Progression
+    a.mdl-navigation__link(href='booking.html') My Online Booking
+    a.mdl-navigation__link(href='courseinfo.html') Course Information
+    a.mdl-navigation__link(href='discussions.html') Discussions
+    a.mdl-navigation__link(href='files.html')
+      span.mdl-badge(data-badge='10') Files
+    //- a
+    a.mdl-navigation__link(href='calendar.html')
+      span.mdl-badge(data-badge='4') Calendar
+    //- a
+    a.mdl-navigation__link(href='announcements.html') Announcements
+    a.mdl-navigation__link(href='codeofconduct.html') Code of Conduct
+    a.mdl-navigation__link(href='login.html') Logout
+  //- nav
+//- mdl-layout__drawer

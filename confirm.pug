@@ -1,0 +1,44 @@
+extends ./layout/_layout-page.pug
+
+block content
+
+  main.mdl-layout__content
+    .page-content
+      .navigation
+        a.mdl-button.mdl-js-button.mdl-button--icon(href='booking.html')
+          i.material-icons arrow_back
+        //- button
+        .breadcrumb Conclude and Confirm
+      //- navigation
+      .schedule.mdl-card.confirm
+        .heading
+          h6 Master of Professional Accounting
+          .sched
+            p 10:00AM - 11:00AM
+            p Monday - Wednesday - Friday
+            p Starts 01/10/2017
+            p Room 1
+          //- sched
+        //- .heading
+        .mdl-card__supporting-text Accounting is a critical component of any company or institution...
+        .mdl-card__actions._text-normal
+          a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href='timetable.html')
+            | Timetable
+          //- a
+        //- mdl-card__actions
+        .cost
+          p $ 900.00 ( discounted $100 )
+        //- cost
+      //- mdl-card
+      section
+        a.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored.mdl-js-ripple-effect.mdl-button--accent(href='payment.html') Confirm
+      //- section
+    //- page-content
+    
+  //- main
+
+block scripts
+  script.
+    $(document).ready(function() {
+      
+    });

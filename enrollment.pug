@@ -1,0 +1,85 @@
+extends ./layout/_layout-page.pug
+
+block content
+
+  main.mdl-layout__content
+    .page-content
+      .navigation
+        .breadcrumb My Current Enrollment
+      //- navigation
+      
+      section
+        .search-bar.card.mdl-layout__header-row
+          form(action='#')
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--expandable
+              label.mdl-button.mdl-js-button.mdl-button--icon(for='sample6')
+                i.material-icons search
+              //- label
+              .mdl-textfield__expandable-holder
+                input#sample6.mdl-textfield__input(type='text')
+                label.mdl-textfield__label(for='sample-expandable') Expandable Input
+              //- mdl-textfield__expandable-holder
+            //- mdl-textfield
+          //- form
+          .mdl-layout-spacer
+          button.mdl-button.mdl-js-button.mdl-button--icon
+            i.material-icons mic
+          //- button
+        //- mdl-card
+        
+        .schedule.mdl-card.mdl-shadow--2dp
+          .heading
+            h6 Mass Communication Class
+            .sched
+              p 10:00AM - 11:00AM
+              p Monday - Wednesday - Friday
+              p Starts 01/10/2017
+              p Room 1
+            //- sched
+          //- .heading
+          .mdl-card__supporting-text  Greyhound divisively hello coldly wonderfully marginally far upon excluding.
+          .mdl-card__actions._text-normal
+            a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href='timetable.html')
+              | Timetable
+            //- a
+            a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+              | Attendance
+            //- a
+            a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+              | Attachments
+            //- a
+          //- mdl-card__actions
+        //- mdl-card
+        .schedule.mdl-card.mdl-shadow--2dp
+          .heading
+            h6 Mass Communication Class
+            .sched
+              p 10:00AM - 11:00AM
+              p Monday - Wednesday - Friday
+              p Starts 01/10/2017
+              p Room 1
+            //- sched
+          //- .heading
+          .mdl-card__supporting-text  Greyhound divisively hello coldly wonderfully marginally far upon excluding.
+          .mdl-card__actions._text-normal
+            a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href='timetable.html')
+              | Timetable
+            //- a
+            a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+              | Attendance
+            //- a
+            a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+              | Attachments
+            //- a
+          //- mdl-card__actions
+        //- mdl-card
+      //- section
+    //- page-content
+    
+  //- main
+
+block scripts
+  script.
+    $(document).ready(function() {
+      
+    });

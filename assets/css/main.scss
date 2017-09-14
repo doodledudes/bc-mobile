@@ -1,0 +1,236 @@
+// VAR
+$blue : #4279A6;
+
+@import '_mixins';
+@import '_mdl';
+
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 62.5%;
+}
+a {
+  color: $blue;
+}
+
+// =============================================================================[ CUSTOM CSS ]
+section {
+  padding: 10px;
+}
+.user-info {
+  & {
+    padding: 22px 15px 22px 90px;
+    background: $blue;
+    position: relative;
+    font-size: 1.4em;
+    color: white;
+    font-weight: 300;
+  }
+  img {
+    border-radius: 50%;
+    position: absolute;
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60px;
+  }
+  .email {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .userlabel {
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+.navigation {
+  padding: 10px;
+  border-bottom: 2px solid #eee;
+  button {
+    color: gray;
+  }
+  .breadcrumb {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+    vertical-align: middle;
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .save {
+    position: absolute;
+    right: 15px;
+  }
+}
+button.floating-add {
+  position: fixed;
+  z-index: 999;
+  bottom: 30px;
+  right: 30px;
+  background: $blue !important;
+}
+.card {
+  padding: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.search-bar {
+  & {
+    margin: 10px 0;
+  }
+  .material-icons {
+    color: gray;
+  }
+}
+.class-room {
+  &, ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  a, a:hover {
+    text-decoration: none;
+    color: $blue;
+  }
+  a {
+    display: block;
+    padding: 15px 15px;
+  }
+  .class > a {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .topic {
+    padding: 15px 0;
+    li {
+      padding-left: 30px;
+    }
+  }
+}
+.schedule {
+  .heading {
+    padding: 16px;
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      color: $blue;
+    }
+    .sched {
+      color: gray;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  &.confirm {
+    border-bottom: 1px solid #ddd;
+  }
+}
+.cost {
+  color: gray;
+  padding: 0 16px;
+}
+.announcements {
+  .item {
+    padding: 30px 16px;
+    border-top: 1px solid #ddd;
+    h6 {
+      margin: 0;
+      color: $blue;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+.album-frame {
+  height: 180px;
+  background: #ccc;
+  position: relative;
+  .material-icons {
+    color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+.files {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  font-size: 1.2em;
+  .uploads + .uploads {
+    margin-top: 15px;
+  }
+  .footer {
+    margin-top: 10px;
+  }
+  .title {
+    font-weight: bold;
+  }
+  .author, .details {
+    color: gray;
+  }
+  .download {
+    float: right;
+    color: #ccc;
+  }
+}
+.topic-details {
+  .mdl-card__actions {
+    border-bottom: 1px solid #ddd;
+  }
+}
+.response {
+  text-decoration: none;
+  color: inherit;
+}
+.reply-box {
+  & {
+    padding: 15px 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  .avatar {
+    & {
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+    img {
+      border-radius: 50%;
+      width: 50px;
+    }
+  }
+  .mdl-textfield__input {
+    border-bottom: 0;
+  }
+  .mdl-textfield, .mdl-textfield__label {
+    padding-left: 65px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mdl-textfield__label::after {
+    margin-left: 65px;
+    margin-right: 16px;
+    left: 0;
+    background-color: $blue;
+  }
+}
+.replies {
+  & {
+    border-left: 3px solid #ccc;
+    margin-left: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .message {
+
+  }
+}
+label.terms {
+  height: auto;
+}

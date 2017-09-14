@@ -1,0 +1,87 @@
+.mdl-badge {
+  &::after {
+    // background: #88AAC6 !important;
+  }
+}
+.mdl-layout__header {
+  background-color: #4279A6;
+}
+.mdl-card {
+  width: auto;
+  .material-icons {
+    color: #ccc;
+  }
+  .mdl-card__title {
+    & {
+      font-size: .8em;
+    }
+    img {
+      border-radius: 50%;
+      width: 50px;
+    }
+    .name {
+      display: inline-block;
+      margin-left: 15px;
+      .datestamp {
+        color: gray;
+        margin-top: 5px;
+      }
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      color: #4279A6;
+    }
+  }
+  .mdl-card__supporting-text {
+    font-size: .9em;
+    color: #333;
+    line-height: 24px;
+    a.details {
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .mdl-card__actions {
+    &._aright {
+      a.download {
+        float: right;
+      }
+    }
+    &._text-normal {
+      a {
+        text-transform: capitalize !important;
+      }
+    }
+  }
+}
+.mdl-card__actions {
+  a {
+    color: #4279A6 !important;
+    font-weight: 400;
+    font-size: .9em;
+  }
+}
+section > .mdl-card {
+  & + .mdl-card {
+    margin-top: 10px;
+  }
+}
+.mdl-layout__drawer {
+  border-right: 0;
+}
+.mdl-button--raised.mdl-button--colored {
+  background: $blue !important;
+  font-weight: normal;
+}
+.mdl-checkbox__ripple-container .mdl-ripple {
+  background: $blue !important;
+}
+.mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+  // border-color: $blue !important;
+}
+.mdl-button--primary.mdl-button--primary {
+  color: $blue;
+}

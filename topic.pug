@@ -1,0 +1,83 @@
+extends ./layout/_layout-page.pug
+
+block content
+
+  main.mdl-layout__content
+    .page-content
+      .navigation
+        a.mdl-button.mdl-js-button.mdl-button--icon(href='discussions.html')
+          i.material-icons arrow_back
+        //- button
+        .breadcrumb Engeeniring Topic
+      //- navigation
+      
+      section
+        .mdl-card.mdl-shadow--2dp
+          .mdl-card__title
+            img(src='http://via.placeholder.com/40')
+            .name
+              | Tom Hardy
+              .datestamp Friday at 05:24 PM
+            //- name
+          //- mdl-card__title
+          .album-frame
+            i.material-icons filter
+          .mdl-card__supporting-text
+            a.details(href='topic-details.html')
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Mauris sagittis pellentesque lacus eleifend lacinia...
+            //- a
+          //- mdl-card__supporting-text
+          .mdl-card__actions._aright
+            button.mdl-button.mdl-js-button.mdl-button--icon
+              i.material-icons favorite_border
+            //- button
+            a.mdl-button.mdl-js-button.mdl-button--icon(href='response.html')
+              i.material-icons chat_bubble_outline
+            //- button
+            a.download.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+              | Download Attachment
+            //- a
+          //- mdl-card__actions
+        //- mdl-card
+        .mdl-card.mdl-shadow--2dp
+          .mdl-card__title
+            img(src='http://via.placeholder.com/40')
+            .name
+              | Art Class Discussion Board
+              .datestamp Tuesday at 05:24 PM
+            //- name
+          //- mdl-card__title
+          .album-frame
+            i.material-icons filter
+          .mdl-card__supporting-text
+            a.details(href='topic-details.html')
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Mauris sagittis pellentesque lacus eleifend lacinia...
+            //- a
+          //- mdl-card__supporting-text
+          .mdl-card__actions._aright
+            button.mdl-button.mdl-js-button.mdl-button--icon
+              i.material-icons favorite_border
+            //- button
+            a.mdl-button.mdl-js-button.mdl-button--icon(href='response.html')
+              i.material-icons chat_bubble_outline
+            //- button
+            a.download.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+              | Download Attachment
+            //- a
+          //- mdl-card__actions
+        //- mdl-card
+      //- section
+    //- page-content
+    
+    button.floating-add.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
+      i.material-icons add
+    //- button
+  //- main
+
+block scripts
+  script.
+    $(document).ready(function() {
+      
+    });
