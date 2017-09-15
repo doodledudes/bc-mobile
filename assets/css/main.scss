@@ -234,3 +234,61 @@ button.floating-add {
 label.terms {
   height: auto;
 }
+
+// Temporary
+.oops {
+  & {
+    text-align: center;
+    margin-top: 25px;
+  }
+  color: #ddd;
+  i {
+    font-size: 50px;
+    vertical-align: middle;
+  }
+  span {
+    vertical-align: middle;
+  }
+  h3 {
+    margin: 0;
+  }
+}
+.login-content {
+  & {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: fixed;
+    box-sizing: border-box;
+    @include box(100%);
+    overflow-y: scroll;
+  	overflow-x: hidden;
+  	-webkit-overflow-scrolling: touch;
+  }
+  .logo {
+    & {
+      width: 60%;
+      margin: auto;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .form {
+    flex-grow: 2;
+    .visibility {
+      position: absolute;
+      right: 0;
+      color: #ccc;
+    }
+  }
+  .mdl-textfield {
+    &, input, label {
+      width: 100%;
+    }
+  }
+  .mdl-button {
+    width: 100%;
+  }
+}
